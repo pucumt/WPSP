@@ -1,12 +1,12 @@
-var Post = require('../../models/post.js'),
-    login = require('./login.js'),
-    logout = require('./logout.js'),
-    post = require('./post.js'),
-    reg = require('./reg.js'),
-    article = require('./article.js'),
-    suggest = require('./suggest.js'),
-    eng100 = require('./100Eng.js'),
-    qiniu = require('./qiniu.js');
+// var Post = require('../../models/post.js'),
+//     login = require('./login.js'),
+//     logout = require('./logout.js'),
+//     post = require('./post.js'),
+//     reg = require('./reg.js'),
+//     article = require('./article.js'),
+//     suggest = require('./suggest.js'),
+//     eng100 = require('./100Eng.js'),
+//     qiniu = require('./qiniu.js');
 
 module.exports = function(app) {
     app.get('/', function(req, res) {

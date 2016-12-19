@@ -1,5 +1,5 @@
-var client = require('./Client/index.js'),
-    server = require('./Server/index.js');
+var client = require('./Client/index.js');//,
+    //server = require('./Server/index.js');
 
 module.exports = function(app) {
 
