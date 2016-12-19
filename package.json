@@ -1,0 +1,31 @@
+{
+	"name": "WPSP",
+	"version": "1.0.0",
+	"private": true,
+	"description": "WP SP",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pucumt/WPSP.git"
+	},
+	"license": "GPL",
+	"scripts": {
+		"start": "node app.js",
+		"test": "node-debug app.js"
+	},
+	"dependencies": {
+		"express": "4.10.2",
+		"body-parser": "1.9.0",
+		"cookie-parser": "1.3.3",
+		"morgan": "1.3.1", 
+		"serve-favicon": "2.1.5",
+		"swig": "~1.4.2", 
+		"markdown": "0.5.0",
+		"mongoose": "^4.0.1",
+		"express-session": "1.9.1",
+		"connect-mongo": "0.4.1",
+		"multer": "0.1.6",
+		"shortid": "^2.2.4",
+		"moment": "^2.10.3",
+		"qiniu": "^6.1.9"
+	}
+}
