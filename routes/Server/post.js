@@ -18,9 +18,7 @@ module.exports = function(app) {
 				posts: posts,
 				page: page,
 				isFirstPage: (page - 1) == 0,
-				isLastPage: ((page - 1) * 20 + posts.length) == total,
-				success: req.flash('success').toString(),
-				error: req.flash('error').toString()
+				isLastPage: ((page - 1) * 20 + posts.length) == total
 			});
 		});
 	});
@@ -29,9 +27,7 @@ module.exports = function(app) {
 	app.get('/admin/post', function(req, res) {
 		res.render('Server/post', {
 			title: '发表',
-			user: req.session.user,
-			success: req.flash('success').toString(),
-			error: req.flash('error').toString()
+			user: req.session.user
 		});
 	});
 
@@ -50,10 +46,8 @@ module.exports = function(app) {
 			});
 		post.save(function(err) {
 			if (err) {
-				req.flash('error', err);
 				return res.redirect('/');
 			}
-			req.flash('success', '发布成功!');
 			res.redirect('/'); //发表成功跳转到主页
 		});
 	});
@@ -61,7 +55,6 @@ module.exports = function(app) {
 	app.get('/admin/post/pass/:id', checkLogin);
 	app.get('/admin/post/pass/:id', function(req, res) {
 		Post.pass(req.params.id, function() {
-			req.flash('success', '审核成功!');
 			res.redirect('/admin/postList'); //发表成功跳转到主页
 		});
 	});
@@ -69,7 +62,6 @@ module.exports = function(app) {
 	app.get('/admin/post/suggest/:id', checkLogin);
 	app.get('/admin/post/suggest/:id', function(req, res) {
 		Post.suggest(req.params.id, function() {
-			req.flash('success', '审核成功!');
 			res.redirect('/admin/postList'); //发表成功跳转到主页
 		});
 	});
@@ -77,7 +69,6 @@ module.exports = function(app) {
 	app.get('/admin/post/unsuggest/:id', checkLogin);
 	app.get('/admin/post/unsuggest/:id', function(req, res) {
 		Post.unsuggest(req.params.id, function() {
-			req.flash('success', '审核成功!');
 			res.redirect('/admin/postList'); //发表成功跳转到主页
 		});
 	});
@@ -85,7 +76,6 @@ module.exports = function(app) {
 	app.get('/admin/post/delete/:id', checkLogin);
 	app.get('/admin/post/delete/:id', function(req, res) {
 		Post.delete(req.params.id, function() {
-			req.flash('success', '审核成功!');
 			res.redirect('/admin/postList'); //发表成功跳转到主页
 		});
 	});
@@ -119,10 +109,8 @@ module.exports = function(app) {
 			});
 		post.update(function(err) {
 			if (err) {
-				req.flash('error', err);
 				return res.redirect('/');
 			}
-			req.flash('success', '发布成功!');
 			res.redirect('/'); //发表成功跳转到主页
 		});
 	});

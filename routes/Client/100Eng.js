@@ -8,18 +8,14 @@ module.exports = function(app) {
 	app.get('/100', function(req, res) {
 		res.render('Client/100/tasks', {
 			title: '做题',
-			user: req.session.user,
-			success: req.flash('success').toString(),
-			error: req.flash('error').toString()
+			user: req.session.user
 		});
 	});
 
 	app.get('/100/login', function(req, res) {
 		res.render('Client/100/login', {
 			title: '登录',
-			user: req.session.user,
-			success: req.flash('success').toString(),
-			error: req.flash('error').toString()
+			user: req.session.user
 		});
 	});
 	app.post('/100/login', function(req, res) {
@@ -47,9 +43,7 @@ module.exports = function(app) {
 	app.get('/100/top10', function(req, res) {
 		res.render('Client/100/top10', {
 			title: 'Top 10',
-			user: req.session.user,
-			success: req.flash('success').toString(),
-			error: req.flash('error').toString()
+			user: req.session.user
 		});
 	});
 

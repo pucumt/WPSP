@@ -17,9 +17,7 @@ module.exports = function(app) {
 				users: users,
 				page: page,
 				isFirstPage: (page - 1) == 0,
-				isLastPage: ((page - 1) * 20 + users.length) == total,
-				success: req.flash('success').toString(),
-				error: req.flash('error').toString()
+				isLastPage: ((page - 1) * 20 + users.length) == total
 			});
 		});
 	});
@@ -27,7 +25,6 @@ module.exports = function(app) {
 	app.get('/admin/user/delete/:id', checkLogin);
 	app.get('/admin/user/delete/:id', function(req, res) {
 		User.delete(req.params.id, function() {
-			req.flash('success', '删除成功!');
 			res.redirect('/admin/userList'); //发表成功跳转到主页
 		});
 	});
@@ -40,9 +37,7 @@ module.exports = function(app) {
 			}
 			res.render('Server/user', {
 				title: '用户',
-				user: user,
-				success: req.flash('success').toString(),
-				error: req.flash('error').toString()
+				user: user
 			});
 		});
 	});
@@ -56,10 +51,8 @@ module.exports = function(app) {
 			});
 		user.update(req.params.id, function(err) {
 			if (err) {
-				req.flash('error', err.toString());
 				return res.redirect('/admin/user/'+req.params.id);
 			}
-			req.flash('success', '修改成功!');
 			res.redirect('/admin/user/'+req.params.id);
 		});
 	});

@@ -9,9 +9,7 @@ module.exports = function(app) {
     app.get('/admin', checkLogin)
     app.get('/admin', function(req, res) {
         res.render('Server/index', {
-            title: '主页',
-            success: req.flash('success').toString(),
-            error: req.flash('error').toString()
+            title: '主页'
         });
     });
 

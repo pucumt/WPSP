@@ -1,6 +1,5 @@
 var Post = require('../../models/post.js'),
     Comment = require('../../models/comment.js'),
-    suggest = require('./suggest.js'),
     auth = require("./auth"),
     checkLogin = auth.checkLogin,
     shortid = require('shortid'),
@@ -16,16 +15,11 @@ module.exports = function(app) {
             if (comments == null) {
                 comments = [];
             }
-            suggest(function(suggests) {
-                res.render('Client/article', {
-                    title: '文章',
-                    post: post,
-                    comments: comments,
-                    user: req.session.user,
-                    suggests: suggests,
-                    success: req.flash('success').toString(),
-                    error: req.flash('error').toString()
-                });
+            res.render('Client/article', {
+                title: '文章',
+                post: post,
+                comments: comments,
+                user: req.session.user
             });
         });
     });
@@ -41,10 +35,8 @@ module.exports = function(app) {
             });
         comment.save(function(err) {
             if (err) {
-                req.flash('error', err);
                 return res.redirect('/');
             }
-            req.flash('success', '发布成功!');
             res.redirect('/article/' + comment.option.postid); //发表成功跳转到主页
         });
     });

@@ -19,9 +19,7 @@ module.exports = function(app) {
                 title: '文章',
                 post: post,
                 comments: comments, 
-                user: req.session.user,
-                success: req.flash('success').toString(),
-                error: req.flash('error').toString()
+                user: req.session.user
             });
         });
 	});
@@ -37,10 +35,8 @@ module.exports = function(app) {
             });
         comment.save(function(err) {
             if (err) {
-                req.flash('error', err);
                 return res.redirect('/');
             }
-            req.flash('success', '发布成功!');
             res.redirect('/article/'+comment.option.postid); //发表成功跳转到主页
         });
     });

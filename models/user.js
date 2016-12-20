@@ -5,7 +5,8 @@ var db = mongoose.connection;
 var userSchema = new mongoose.Schema({
   name: String,
   password: String,
-  email: String
+  email: String,
+  mobile: String
 }, {
   collection: 'users' 
 });
