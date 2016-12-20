@@ -1,6 +1,6 @@
 var path = require('path'),
   express = require('express'),
-  swig = require('swig'),
+  nunjucks = require('nunjucks'),
   favicon = require('serve-favicon'),
   logger = require('morgan'),
   cookieParser = require('cookie-parser'),
@@ -21,8 +21,12 @@ var path = require('path'),
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
-app.engine('html', swig.renderFile);
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app
+});
+//app.set('view engine', 'html');
+//app.engine('html', swig.renderFile);
 app.use(favicon(__dirname + '/public/default/assets/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(logger('combined', { stream: accessLog }));

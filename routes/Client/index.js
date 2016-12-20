@@ -10,7 +10,7 @@
 
 module.exports = function(app) {
     app.get('/', function(req, res) {
-        res.render('Client/index', {
+        res.render('Client/index.html', {
             title: '主页',
             content: "content and content"
         }); 
