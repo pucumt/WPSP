@@ -2,69 +2,42 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>通城都市岛</title>
 	<link rel="stylesheet" href="/default/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="/default/assets/css/main.css">
 	<link rel="stylesheet" href="/default/assets/css/formValidation.css">
 	<script type="text/javascript" src="/default/assets/js/jquery-1.11.1.js"></script>
 	<script type="text/javascript" src="/default/assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="/default/assets/js/qiniu.min.js"></script>
-	<script type="text/javascript" src="/default/assets/js/plupload.full.min.js"></script>
 	<script type="text/javascript" src="/default/assets/js/formValidation.js"></script>
-	<script>
-		var _hmt = _hmt || [];
-		(function()
-		{
-			var hm = document.createElement("script");
-			hm.src = "//hm.baidu.com/hm.js?bfdb448a3804e65a7dd6131506dbae1e";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
 </head>
 <body>
-	<nav class="main-navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-left">
-					<h3>通城都市岛</h3>
-				</div>
-				<div class="col-sm-12">
-					<div class="collapse navbar-collapse" id="main-menu">
-						<ul class="nav navbar-nav pull-right">
-							<li role="presentation"><a href="/">首页</a></li>
-							{% if user %}
-							<li role="presentation"><a href="/post">爆料</a></li>
-							<li role="presentation"><a href="/logout">{{ user.name }}(退出)</a></li>
-							{% else %}
-							<li role="presentation"><a href="/login">登录</a></li>
-							<li role="presentation"><a href="/reg">注册</a></li>
-							{% endif %}
-						</ul>
-					</div>
-				</div>
-			</div>
+	<div class="container">
+		<div class="row nav-bar">
+			<div class="nav-bar-header" style="background-image: url(https://img.yzcdn.cn/upload_files/2015/09/17/FocYjskBXYoQBSow9zQ-B2VglzwP.jpg);">
+		        <div class="nav-bar-title">南通百分百教育</div>
+		        <div class="nav-bar-avatar">
+		            <img src="https://img.yzcdn.cn/upload_files/2015/09/17/99cfaf416b3621fc3a1ce797f73c525d.jpeg?imageView2/2/w/200/h/200/q/75/format/webp">
+		        </div>
+		    </div>
 		</div>
-	</nav>
-	<div class="site-wrapper">
-		<section class="content-wrap">
-			<div class="container">
-				<div class="row main-content">
-					<main class="col-md-19">
-						{% block main %}
-						{% endblock %}
-					</main>
-				</div>
-			</div>
-		</section>
-		<hr />
-		<footer>
-			<div class="container">
-				<div class="row text-center">
-					Copyright&copy;都市岛 2016, All Rights Reserved. 苏ICP备16006365号
-				</div>
-			</div>
-		</footer>
+		<div class="row">
+			<ul class="goods-list clearfix">
+		    <li class="goods-card card ">
+		        <a href="https://h5.koudaitong.com/v2/goods/2ov6v6hoe8yby" class="goods link clearfix" target="_blank">
+		            <div class="photo-block" style="height: 393px; background-color: rgb(255, 255, 255);">
+		                <img class="goods-photo" src="https://img.yzcdn.cn/upload_files/2016/12/11/FtYY0top_3ooV5l3YQ_v8wcGsr_0.jpg?imageView2/2/w/730/h/0/q/75/format/webp" />
+		             </div>
+		            <div class="info clearfix info-price">
+		                <p class="goods-price">
+		                    <em>￥2200.00</em>
+		                </p>
+		            </div>
+		            <div class="goods-buy btn1">111</div>
+		         </a>
+		    </li>
+		    </ul>
+		</div>
 	</div>
 	<script type="text/javascript" src="/default/assets/js/public.js"></script>
 </body>

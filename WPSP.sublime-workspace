@@ -88,50 +88,26 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 156,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "routes/Client/index.js",
 			"settings":
 			{
-				"buffer_size": 1761,
+				"buffer_size": 479,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "models/user.js",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 2302,
+				"buffer_size": 597,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "routes/Client/login.js",
+			"file": "routes/Client/home.js",
 			"settings":
 			{
-				"buffer_size": 1056,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/Server/user.js",
-			"settings":
-			{
-				"buffer_size": 1798,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "routes/Client/suggest.js",
-			"settings":
-			{
-				"buffer_size": 248,
+				"buffer_size": 894,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,15 +115,15 @@
 			"file": "views/Client/index.html",
 			"settings":
 			{
-				"buffer_size": 107,
+				"buffer_size": 1075,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "settings.js",
+			"file": "views/Client/partial/main.html",
 			"settings":
 			{
-				"buffer_size": 93,
+				"buffer_size": 2385,
 				"line_ending": "Windows"
 			}
 		}
@@ -196,14 +172,41 @@
 	[
 		"/D/工作学习文档/练习/nodejs/WPSP",
 		"/D/工作学习文档/练习/nodejs/WPSP/models",
-		"/D/工作学习文档/练习/nodejs/WPSP/node_modules",
 		"/D/工作学习文档/练习/nodejs/WPSP/routes",
-		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client"
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client",
+		"/D/工作学习文档/练习/nodejs/WPSP/views",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Client",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Client/partial",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Server"
 	],
 	"file_history":
 	[
-		"/D/工作学习文档/练习/nodejs/WPWebSite/WPWebSite.sublime-project",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Client/parent.html",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Client/partial/main.html",
+		"/D/工作学习文档/练习/nodejs/WPSP/views/Client/index.html",
+		"/D/工作学习文档/练习/nodejs/WPWebSite/docs/Mongodb.md",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/user.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/README.md",
 		"/D/工作学习文档/练习/nodejs/WPWebSite/docs/install.md",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/index.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/article.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/post.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/logout.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/login.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/index.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/article.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/auth.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Server/auth.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/100Eng.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/100auth.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/reg.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/home.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/models/user.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/login.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/routes/Client/logout.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/settings.js",
+		"/D/工作学习文档/练习/nodejs/WPSP/WPSP.sublime-project",
+		"/D/工作学习文档/练习/nodejs/WPWebSite/WPWebSite.sublime-project",
 		"/D/工作学习文档/练习/nodejs/WPSP/routes/index.js",
 		"/D/工作学习文档/练习/nodejs/WPSP/app.js",
 		"/D/工作学习文档/练习/nodejs/WPSP/package.json",
@@ -305,31 +308,7 @@
 		"/D/personal/nodejs/Ghost/content/themes/casper-zh/package.json",
 		"/D/personal/nodejs/Ghost/Helpers/init.cmd",
 		"/D/personal/nodejs/Ghost/core/client/dist/assets/ghost.js",
-		"/D/personal/nodejs/Ghost/ghost.njsproj",
-		"/D/personal/nodejs/Ghost/core/server/views/default.hbs",
-		"/D/personal/nodejs/Ghost/core/server/views/user-error.hbs",
-		"/D/personal/nodejs/Ghost/core/client/app/html/themes.html",
-		"/D/personal/nodejs/Ghost/core/client/app/styles/patterns/forms.css",
-		"/D/personal/nodejs/Ghost/core/client/app/styles/patterns/icons.css",
-		"/D/personal/nodejs/Ghost/core/client/app/templates/settings/code-injection.hbs",
-		"/D/personal/nodejs/Ghost/core/client/app/routes/settings/code-injection.js",
-		"/D/personal/nodejs/Ghost/core/client/public/assets/fonts/ghosticons.svg",
-		"/D/personal/nodejs/ghostcn/Helpers/init.cmd",
-		"/D/personal/nodejs/Ghost/core/client/app/html/apps.html",
-		"/D/personal/nodejs/ghostcn/node_modules/intl-messageformat/lib/core.js",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/index.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/partials/navigation.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/page.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/tag.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/assets/js/bootstrap.js",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/author.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/post.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/partials/sidebar.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/partials/loop.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/ghost-matery-master/default.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/partials/header.hbs",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/assets/css/screen.css",
-		"/D/personal/nodejs/ghostcn/content/themes/casper-zh/default.hbs"
+		"/D/personal/nodejs/Ghost/ghost.njsproj"
 	],
 	"find":
 	{
@@ -340,6 +319,8 @@
 		"height": 141.0,
 		"where_history":
 		[
+			"-*.css",
+			"",
 			"-node_modules",
 			"not in node_modules",
 			"",
@@ -358,6 +339,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"req.flash",
+			"suggest",
+			"pm2",
 			"success",
 			"flash",
 			"suggest",
@@ -454,47 +438,78 @@
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "routes/Client/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 156,
+						"buffer_size": 479,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								355,
+								355
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "routes/Client/index.js",
+					"buffer": 2,
+					"file": "routes/Client/home.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1761,
+						"buffer_size": 894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								48,
-								48
+								205,
+								205
 							]
 						],
 						"settings":
@@ -507,140 +522,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "models/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "routes/Client/login.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1056,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "routes/Server/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1798,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1604,
-								1604
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1256.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "routes/Client/suggest.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 248,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								234,
-								234
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "views/Client/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 107,
+						"buffer_size": 1075,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								24,
-								24
+								120,
+								120
 							]
 						],
 						"settings":
@@ -653,35 +552,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "settings.js",
-					"semi_transient": false,
+					"buffer": 4,
+					"file": "views/Client/partial/main.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 93,
+						"buffer_size": 2385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								287,
+								287
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1782.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
