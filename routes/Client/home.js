@@ -18,6 +18,13 @@ module.exports = function(app) {
                 price: "100",
                 imgFile: "...",
                 post: "test  post"
+            },
+            {
+                shortid: 2,
+                title: "test title",
+                price: "100",
+                imgFile: "...",
+                post: "test  post"
             }];
             res.render('Client/index.html', {
                 title: '主页',

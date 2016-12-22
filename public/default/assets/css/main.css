@@ -1,6 +1,10 @@
 body{
     background-color: #FFFFFF;
 }
+footer, .container{
+    margin: 0 auto;
+    width: 540px;
+}
 .nav-bar{
     position: relative;
     margin-bottom: 30px;
@@ -23,7 +27,8 @@ body{
 }
 .goods-card.card {
     margin: 8px 0;
-    width: 100%;
+    float: left;
+    width: 263px;
 }
 .goods.link {
     display: block;
@@ -65,15 +70,9 @@ body{
     font-style: normal;
     color: #ff6600;
 }
-.goods-list .goods-buy.btn1 {
-    bottom: 10px;
+.goods-list .goods-buy.btn {
+    bottom: 14px;
     right: 10px;
-    height: 25px;
-    width: 30px;
-    background-position: 0 0;
-    background-image: url("/v2/image/wap/showcase2x-1416814739063.png");
-    background-repeat: no-repeat;
-    background-size: 40px auto;
     position: absolute;
 }
 @media (min-width: 360px) {
@@ -121,17 +120,14 @@ body{
 
 footer{
     min-height: 80px;
+    border-top: 3px solid #cfcfcf;
+    margin-top: 30px;
+    padding-top: 15px;
 }
 
-hr{
-    border: 3px solid #cfcfcf;
-}
 pre {
     background-color: #fff;
     border: 0;
     border-radius: 0;
-    font-size: 14px;
-}
-h5 a{
     font-size: 14px;
 }
