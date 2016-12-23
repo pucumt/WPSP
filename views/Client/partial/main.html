@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,37 +12,13 @@
 	<script type="text/javascript" src="/default/assets/js/bootstrap.js"></script>
 	<script type="text/javascript" src="/default/assets/js/formValidation.js"></script>
 </head>
+
 <body>
-	<div class="container" style="width: 540px;">
-		<div class="row nav-bar">
-			<div class="nav-bar-header" style="background-image: url(https://img.yzcdn.cn/upload_files/2015/09/17/FocYjskBXYoQBSow9zQ-B2VglzwP.jpg);">
-		        <div class="nav-bar-title">南通百分百教育</div>
-		        <div class="nav-bar-avatar">
-		            <img src="https://img.yzcdn.cn/upload_files/2015/09/17/99cfaf416b3621fc3a1ce797f73c525d.jpeg?imageView2/2/w/200/h/200/q/75/format/webp">
-		        </div>
-		    </div>
-		</div>
-		<div class="row">
-			<ul class="goods-list clearfix">
-		    <li class="goods-card card ">
-		        <a href="https://h5.koudaitong.com/v2/goods/2ov6v6hoe8yby" class="goods link clearfix" target="_blank">
-		            <div class="photo-block" style="background-color: rgb(255, 255, 255);">
-		                <img class="goods-photo" src="https://img.yzcdn.cn/upload_files/2016/12/11/FtYY0top_3ooV5l3YQ_v8wcGsr_0.jpg?imageView2/2/w/730/h/0/q/75/format/webp" />
-		             </div>
-		            <div class="info clearfix info-price">
-		                <p class="goods-price">
-		                    <em>￥2200.00</em>
-		                </p>
-		            </div>
-		            <button type="button" class="goods-buy btn btn-danger btn-xs">立刻购买</button>
-		         </a>
-		    </li>
-		    </ul>
-		</div>
-	</div>
+	{% block main %}{% endblock %}
 	<footer class="text-center">
 		Copyright&copy;都市岛 2016, All Rights Reserved.
 	</footer>
 	<script type="text/javascript" src="/default/assets/js/public.js"></script>
 </body>
+
 </html>
