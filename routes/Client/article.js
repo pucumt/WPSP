@@ -1,5 +1,4 @@
 var Post = require('../../models/post.js'),
-    Comment = require('../../models/comment.js'),
     auth = require("./auth"),
     checkLogin = auth.checkLogin,
     shortid = require('shortid'),
@@ -7,19 +6,21 @@ var Post = require('../../models/post.js'),
 
 module.exports = function(app) {
     app.get('/article/:id', function(req, res) {
-        //查询并返回第 page 页的 20 篇文章
+        //查询并返回id的文章
         Post.getOne(req.params.id, true, function(err, post, comments) {
             if (err) {
                 post = {};
             }
-            if (comments == null) {
-                comments = [];
-            }
-            res.render('Client/article', {
+            post = {
+                shortid: 1,
+                title: "test title",
+                price: "100",
+                imgFile: "...",
+                post: "test  post"
+            };
+            res.render('Client/article.html', {
                 title: '文章',
-                post: post,
-                comments: comments,
-                user: req.session.user
+                post: post
             });
         });
     });

@@ -1,29 +1,23 @@
-<%- include partial/header %>
-<div class="content_body">
- <div class="panel panel-default">
-   <div class="panel-heading">
-      <h3 class="panel-title">
-         <a href="/article/<%= post.shortid %>" target="_blank"><%= post.title %></a> <span class="red"><%= post.price %></span>
-      </h3>
-   </div>
-   <div class="panel-body">
-      <div class="col-sm-24">
-    作者：<%= post.recordBy %> | 
-    日期：<%= post.recordDate.toLocaleString() %>
-  </div>
-  <div class="col-sm-24">
-  <div class="col-sm-24 item-img">
-    <a href="/article/<%= post.shortid %>"  target="_blank">
-    <img src="<%= post.imgFile %>?imageView2/3/w/200/q/80" alt="<%= post.title %>">
-    </a> 
-  </div>
-    <div class="col-sm-24">
-      <pre><%- post.post %></pre>
-      <p style=""><a class="btn btn-warning"  target="_blank" href="<%= post.linkAddr %>">直接购买</a></p>
+{% extends "Client/partial/main.html" %} {% block main %}
+<div class="container">
+  <div class="row">
+    {% if post %}
+    <div class="goods-card card ">
+      <a href="https://h5.koudaitong.com/v2/goods/2ov6v6hoe8yby" class="goods link clearfix" target="_blank">
+        <div class="photo-block" style="background-color: rgb(255, 255, 255);">
+          <img class="goods-photo" src="https://img.yzcdn.cn/upload_files/2016/12/11/FtYY0top_3ooV5l3YQ_v8wcGsr_0.jpg?imageView2/2/w/730/h/0/q/75/format/webp"
+          />
+        </div>
+        <div class="info clearfix info-price">
+          <p class="goods-price">
+            <em>￥{{ post.price }}</em>
+          </p>
+        </div>
+        <button type="button" class="goods-buy btn btn-danger btn-xs">立刻购买</button>
+      </a>
     </div>
+    {% endif %}
   </div>
-   </div>
 </div>
-<%- include comment %>  
-</div>
-<%- include partial/footer %>
+<script type="text/javascript" src="/default/assets/js/index.js"></script>
+{% endblock %}

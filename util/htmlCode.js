@@ -1,5 +1,5 @@
 var Code = {
-    htmlEscape: function(str) {
+    htmlEscape: function (str) {
         return String(str)
             .replace(/&/g, '&amp;')
             .replace(/"/g, '&quot;')
@@ -9,7 +9,7 @@ var Code = {
     },
 
     // I needed the opposite function today, so adding here too:
-    htmlUnescape: function(value) {
+    htmlUnescape: function (value) {
         return String(value)
             .replace(/&quot;/g, '"')
             .replace(/&#39;/g, "'")
