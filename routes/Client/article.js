@@ -13,7 +13,7 @@ module.exports = function(app) {
             }
             post = {
                 shortid: 1,
-                title: "test title",
+                title: "百分百音标课——四年级必修",
                 price: "100",
                 imgFile: "...",
                 post: "test  post"

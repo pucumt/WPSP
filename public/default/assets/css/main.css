@@ -6,6 +6,7 @@ footer,
 .container {
     margin: 0 auto;
     width: 100%;
+    background-color: #f8f8f8;
 }
 
 .nav-bar {
@@ -54,7 +55,9 @@ footer,
     background-size: 6px 6px;
 }
 
-.goods-list .photo-block img {
+.goods-list .photo-block img,
+.article-card .photo-block img
+ {
     position: relative;
     max-height: 500px;
     max-width: 100%;
@@ -70,19 +73,154 @@ footer,
 }
 
 .goods-list .info .goods-price {
-    font-weight: bold;
-    padding: 0px;
-    float: left;
-    margin: 2px 10px 10px 0;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 0px;
+    font-size: 15px; 
 }
 
-.goods-list .info .goods-price>em {
+.info-price .goods-price>em {
+font-style: normal;
+}
+
+.article-card .info {
+    padding: 0 10px;
+}
+
+.article-card .info-price .goods-price>em {
+    margin-top: 2px;
+    font-size: 24px;
+}
+.info-price .goods-price {
+    font-weight: bold;
+    padding: 0;
+    float: left;
+    margin: 2px 10px 10px 0;
     font-style: normal;
     color: #ff6600;
 }
+.article-block{
+    margin-bottom: 20px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;    
+    background-color: #FFFFFF;
+}
+
+.info-content {
+    padding: 0 10px;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    overflow: hidden;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative
+}
+
+
+.info-content img+br {
+    display: block;
+    padding: 4px 0;
+    content: ' '
+}
+
+.info-content p {
+    margin: 0 0 1em 0
+}
+
+.info-content .Powered-by-XIUMI p {
+    margin: 0
+}
+
+.info-content a {
+    color: #07d
+}
+
+.info-content img {
+    background: none;
+    max-width: 100% !important;
+    min-height: 1px;
+    width: auto !important;
+    vertical-align: middle
+}
+
+.info-content ul,.info-content ol {
+    list-style-position: inside;
+    padding-left: 0
+}
+
+.info-content ol {
+    width: auto !important
+}
+
+.info-content blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 18px;
+    border-left: 5px solid #EEE
+}
+
+.info-content em,.info-content i {
+    font-style: italic
+}
+
+.info-content strong,.info-content b {
+    font-weight: bold
+}
+
+.info-content .selectTdClass {
+    background-color: #edf5fa !important
+}
+
+.info-content table.noBorderTable td,.info-content table.noBorderTable th,.info-content table.noBorderTable caption {
+    border: 1px dashed #ddd !important
+}
+
+.info-content table {
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    display: table;
+    width: auto !important
+}
+
+.info-content td,.info-content th {
+    padding: 5px 10px;
+    border: 1px solid #ddd
+}
+
+.info-content caption {
+    border: 1px dashed #ddd;
+    border-bottom: 0;
+    padding: 3px;
+    text-align: center
+}
+
+.info-content th {
+    border-top: 2px solid #bbb;
+    background: #f7f7f7
+}
+
+.info-content .ue-table-interlace-color-single {
+    background-color: #fcfcfc
+}
+
+.info-content .ue-table-interlace-color-double {
+    background-color: #f7faff
+}
+
+.info-content td p {
+    margin: 0;
+    padding: 0
+}
+
+.info-content .bottom-floating-banner {
+    position: fixed !important;
+    bottom: 0
+}
+/*.info-price .goods-price>em {
+    font-style: normal;
+    color: #ff6600;
+}*/
 
 .goods-list .goods-buy.btn {
     bottom: 14px;
@@ -112,9 +250,12 @@ footer,
         width: 263px;
     }
     footer,
-    .container {
+    .container,
+    .article-card .photo-block
+     {
         width: 540px;
     }
+
 }
 
 .nav-bar-title {

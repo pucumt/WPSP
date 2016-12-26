@@ -4,7 +4,7 @@ var client = require('./Client/index.js'),
 
 module.exports = function(app)
 {
-	// exec('"D:\\Program Files (x86)\\mongodb-3.0.7\\bin\\mongod" --dbpath "D:\\Program Files (x86)\\mongodb-3.0.7\\data"', function(err, stdout, stderr)
+	// exec('"C:\\Program Files\\MongoDB\\Server\\3.4\\bin\\mongod" --dbpath "C:\\Program Files\\MongoDB\\Server\\data"', function(err, stdout, stderr)
 	// {
 	// 	if (err) throw err;
 	// 	console.log(stdout);
