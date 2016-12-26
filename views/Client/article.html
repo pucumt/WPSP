@@ -3,8 +3,7 @@
   <div class="row article-card">
     {% if post %}
     <div class="photo-block" style="background-color: rgb(255, 255, 255);">
-<img src="https://img.yzcdn.cn/upload_files/2016/12/11/FtYY0top_3ooV5l3YQ_v8wcGsr_0.jpg?imageView2/2/w/730/h/0/q/75/format/webp"
-/>
+<img src="/images/post1.jpg" />
 </div>
 <div class="info article-block">
   <div class=" clearfix info-title">
@@ -16,18 +15,16 @@
     </p>
   </div>
 </div>
+{% if post.options and post.options.length>0 %}
 <div class="info article-block">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <p class="form-control-static">email@example.com</p>
-    </div>
-  </div>
-  <div class=" clearfix info-title">
-    <h4>选择: </h4>
-    <button type="button" class="btn btn-default">8:00 - 10:00</button>
+  <div class="" style="padding:10px 0">
+    <span class="control-label">选择:</span>
+    <span data-toggle="modal" data-target="#myModal" class="">
+      课程时间
+    </span>
   </div>
 </div>
+{% endif %}
 <div class="info article-block" style="margin-bottom: 0">
 <label class=" clearfix info-title ">
     <h4>商品详情 </h4>
@@ -64,8 +61,53 @@
 </p>
 </div>
 </div>
+<div class="bottom-fix">
+  <div style="padding: 0 10px; float:left;">
+    <span class="glyphicon glyphicon-home"></span>
+    <span class="glyphicon-class">首页</span>
+  </div>
+  <div style="overflow: hidden;">
+    <button type="button" data-toggle="modal" data-target="#myModal" style="width:100%" class="goods-buy btn btn-danger btn-xs">立刻购买</button>  
+  </div>
+</div>
 {% endif %}
 </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="position: absolute; bottom: 0px; left: 0px; right: 0px; margin: 0; transform: translate3d(0px, 0px, 0px);transition: all 300ms ease; opacity: 1; background: white;">
+    <div class="modal-content" style="border-radius: inherit;">
+      <div class="modal-header" style="border: 0">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+      <div class="container" style="background-color:white">
+          <div class="form-group">
+            <label>课程时间：</label>
+            <div style="margin-top:10px;">
+              <ul class="sys_spec_text clearfix">
+              {% for option in post.options %}
+                <li>
+                  <a href="javascript:;" title="">{{option}}</a>
+                  <i></i>
+                </li>
+              {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>购买数量：</label>
+            <div class="pull-right">
+              <input type="text" style="" class="spinner"/>
+            </div>
+          </div>
+          <div style="padding-top:15px">
+            <button type="button" style="width:100%" class="goods-buy btn btn-danger btn-xs">确认选择</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script type="text/javascript" src="/default/assets/js/index.js"></script>
 {% endblock %}

@@ -16,7 +16,8 @@ module.exports = function(app) {
                 title: "百分百音标课——四年级必修",
                 price: "100",
                 imgFile: "...",
-                post: "test  post"
+                post: "test  post",
+                options: ["8:00-9:00","9:00-10:00"]
             };
             res.render('Client/article.html', {
                 title: '文章',
