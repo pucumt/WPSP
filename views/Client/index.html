@@ -1,10 +1,10 @@
 ﻿{% extends "Client/partial/main.html" %} {% block main %}
 <div class="container">
 	<div class="row nav-bar">
-		<div class="nav-bar-header" style="background-image: url(https://img.yzcdn.cn/upload_files/2015/09/17/FocYjskBXYoQBSow9zQ-B2VglzwP.jpg);">
+		<div class="nav-bar-header" style="background-image: url(/images/title.jpg);">
 			<div class="nav-bar-title">南通百分百教育</div>
 			<div class="nav-bar-avatar">
-				<img src="https://img.yzcdn.cn/upload_files/2015/09/17/99cfaf416b3621fc3a1ce797f73c525d.jpeg?imageView2/2/w/200/h/200/q/75/format/webp">
+				<img src="/images/obj-icon.jpeg">
 			</div>
 		</div>
 	</div>
@@ -13,7 +13,7 @@
 		<ul class="goods-list clearfix list-inline">
 			{% for post in posts %}
 			<li class="goods-card card ">
-				<a href="article/{{ post.shortid }}" class="goods link clearfix" target="_blank">
+				<a href="#" data-id="{{ post.shortid }}" class="good-alink goods link clearfix">
 					<div class="photo-block" style="background-color: rgb(255, 255, 255);">
 						<img class="goods-photo" src="/images/post1.jpg"
 						/>

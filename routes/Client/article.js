@@ -2,10 +2,16 @@ var Post = require('../../models/post.js'),
     auth = require("./auth"),
     checkLogin = auth.checkLogin,
     shortid = require('shortid'),
-    htmlCode = require('../../util/htmlCode.js');
+    htmlCode = require('../../util/htmlCode.js'),
+    settings = require('../../settings.js');;
 
 module.exports = function(app) {
-    app.get('/article/:id', function(req, res) {
+    var routtings = "/";
+    if(settings.subWebsite!="")
+    {
+        routtings += settings.subWebsite;
+    }
+    app.get(routtings+'article/:id', function(req, res) {
         //查询并返回id的文章
         Post.getOne(req.params.id, true, function(err, post, comments) {
             if (err) {
@@ -27,7 +33,7 @@ module.exports = function(app) {
     });
 
     //app.post('/article', checkLogin)
-    app.post('/article', function(req, res) {
+    app.post(routtings+'article', function(req, res) {
         var currentUser = req.session.user,
             order = {
                 id: req.body.id,
