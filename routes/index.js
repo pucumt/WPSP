@@ -4,6 +4,12 @@ var client = require('./Client/index.js'),
 
 module.exports = function(app)
 {
+	// d: 
+	// cd D:\Program Files\mongodb-3.0.7\bin 
+	// mongod --dbpath "D:\Program Files\mongodb-3.0.7\WPSP"
+	// d: 
+	// cd D:\工作学习文档\练习\nodejs\WPSP
+
 	// exec('"C:\\Program Files\\MongoDB\\Server\\3.4\\bin\\mongod" --dbpath "C:\\Program Files\\MongoDB\\Server\\data"', function(err, stdout, stderr)
 	// {
 	// 	if (err) throw err;

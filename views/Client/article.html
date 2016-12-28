@@ -1,7 +1,7 @@
 {% extends "Client/partial/main.html" %} {% block main %}
 <div class="container">
-  <div class="row article-card">
-    {% if post %}
+  {% if post %}
+  <div class="row article-card" id="divDetail">
     <div class="photo-block" style="background-color: rgb(255, 255, 255);">
 <img src="/images/post1.jpg" />
 </div>
@@ -62,16 +62,47 @@
 </div>
 </div>
 <div class="bottom-fix">
-  <div style="padding: 0 10px; float:left;">
+  <div style="padding: 0 10px; float:left; margin-top: 5px;">
     <span class="glyphicon glyphicon-home"></span>
     <span class="glyphicon-class">首页</span>
   </div>
-  <div style="overflow: hidden; margin: -6px 0;">
+  <div style="overflow: hidden;">
     <button type="button" data-toggle="modal" data-target="#myModal" style="width:100%" class="goods-buy btn btn-danger btn-sm">立刻购买</button>  
   </div>
 </div>
-{% endif %}
 </div>
+<div class=" order" id="divOrder" style="display:none">
+  <div class="row order-block">
+    <div class="col-xs-7 photo-block" style="">
+      <img src="/images/post1.jpg" />
+    </div>
+    <div class="col-xs-12 good-title" style="padding:0">
+      {{ post.title }}
+      <div id="option">
+      </div>
+    </div>
+    <div class="col-xs-5 good-price" style="">
+      <em>￥{{ post.price }}</em>
+    </div>
+  </div>
+  <div class="row order-block block-white">
+    <div class="col-xs-19" style="">
+      数量：
+    </div>
+    <div class="col-xs-5 good-price" id="order-goodCount" style="">
+      &nbsp;100
+    </div>
+  </div>
+  <div class="bottom-fix">
+    <div style="padding: 0 10px; float:left; margin-top: 5px;">
+      总计：￥<span id="total" class="">{{ post.price }}</span>
+    </div>
+    <div style="overflow: hidden;">
+      <button type="button" style="width:100%" class="btn btn-danger btn-sm">提交订单</button>  
+    </div>
+  </div>
+</div>
+{% endif %}
 </div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -98,11 +129,11 @@
           <div class="form-group">
             <label>购买数量：</label>
             <div class="pull-right">
-              <input type="text" style="" class="spinner"/>
+              <input type="text" id="goodsCount" style="" class="spinner"/>
             </div>
           </div>
           <div style="padding-top:15px">
-            <button type="button" style="width:100%" class="goods-buy btn btn-danger btn-sm">确认选择</button> 
+            <button type="button" id="btnOrder" style="width:100%" class="goods-buy btn btn-danger btn-sm">确认选择</button>
           </div>
         </div>
       </div>

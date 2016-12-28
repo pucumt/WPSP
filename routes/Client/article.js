@@ -26,20 +26,16 @@ module.exports = function(app) {
         });
     });
 
-    app.post('/article/:id', checkLogin)
-    app.post('/article/:id', function(req, res) {
+    //app.post('/article', checkLogin)
+    app.post('/article', function(req, res) {
         var currentUser = req.session.user,
-            comment = new Comment({
-                postid: req.params.id,
-                content: htmlCode.htmlEscape(req.body.content),
-                name: currentUser.name,
-                date: new Date()
-            });
-        comment.save(function(err) {
-            if (err) {
-                return res.redirect('/');
-            }
-            res.redirect('/article/' + comment.option.postid); //发表成功跳转到主页
+            order = {
+                id: req.body.id,
+
+            };
+        res.render('Client/order.html', {
+                title: '文章',
+                order: order
         });
     });
 }

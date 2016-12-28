@@ -235,11 +235,26 @@ font-style: normal;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 6px 7px;
-    border-top: 2px solid #e5e5e5;
+    padding: 0;
+    border-top: 1px solid #e5e5e5;
     background-color: #fff;
 }
 
+.order .photo-block img
+ {
+    position: relative;
+    width: 100%;
+}
+
+.order .order-block
+{
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.block-white
+{
+    background-color: #FFFFFF;
+}
 @media (min-width: 360px) {
     .nav-bar-header {
         height: 112.5px;
@@ -268,7 +283,6 @@ font-style: normal;
      {
         width: 540px;
     }
-
 }
 
 .nav-bar-title {
