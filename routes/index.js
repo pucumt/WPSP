@@ -1,5 +1,6 @@
 var client = require('./Client/index.js'),
-	exec = require('child_process').exec;//,
+	//exec = require('child_process').exec;//,
+	wechat = require('../util/wechat.js');
 //server = require('./Server/index.js');
 
 module.exports = function(app)
@@ -15,7 +16,9 @@ module.exports = function(app)
 	// 	if (err) throw err;
 	// 	console.log(stdout);
 	// });
-	client(app);
+	wechat(app);
+
+	//client(app);
 
 	//server(app);
 
