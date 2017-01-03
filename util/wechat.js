@@ -16,13 +16,17 @@ module.exports = function(app)
         oriArray.sort();
 
         var original = oriArray.join(''),
-            shaObj = new jsSHA(original, 'TEXT'),
-            scyptoString=shaObj.getHash('SHA-1', 'HEX');
+            shaObj = new jsSHA('SHA-1', 'TEXT'),
+            scyptoString;
+
+        shaObj.update(original);
+        scyptoString=shaObj.getHash("HEX");
+        
          if(signature == scyptoString){
             res.end(echostr);
          } else {
          //验证失败
             res.end("false");
          }
-    };
+    });
 };
